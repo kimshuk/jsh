@@ -1,0 +1,24 @@
+.nav-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between; }
+  .nav-container a {
+    text-decoration: none; }
+
+.nav-login {
+  display: flex; }
+
+.nav-btn {
+  display: flex;
+  color: #231f20;
+  text-transform: uppercase; }
+  .nav-btn:hover {
+    color: #f15b4c; }
+
+.btn {
+  color: #f15b4c;
+  border: 1px solid #f15b4c;
+  padding: 1rem 2rem;
+  text-align: center; }
+  .btn:hover {
+    background-color: #ff5e48; }

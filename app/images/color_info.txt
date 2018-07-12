@@ -1,0 +1,4 @@
+blood orange: #ff5e48;
+Blood orange text: #f15b4c;
+Black text: #231f20;
+White: #ffffff;

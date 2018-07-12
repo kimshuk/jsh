@@ -1,0 +1,44 @@
+// variables
+$orange-bg: #ff5e48;
+$light-grey-bg: #f9f9f9;
+$og-text-color: #f15b4c;
+$bk-text-color: #231f20;
+$white: #ffffff;
+$orange: #f15b4c;
+
+.nav {
+  &-container {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+  &-login {
+    display: flex;
+  }
+
+  &-btn {
+    display: flex;
+    color: $bk-text-color;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $og-text-color;
+    }
+  }
+}
+
+.btn {
+  color: $og-text-color;
+  border: 1px solid $orange;
+  padding: 1rem 2rem;
+  text-align: center;
+
+  &:hover {
+    background-color: $orange-bg;
+    // color: $white;
+  }
+}
