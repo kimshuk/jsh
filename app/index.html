@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-        crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/style.css">
@@ -17,20 +17,20 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="notification-bar">FREE SHIPPING ON YOUR FIRST ORDER AND ANY ORDER OVER $89
-            <a href="#">Click To See Details</a>
-        </div>
-        <nav class="nav-container">
-            <a href="#" class="nav-login">
-                Log In
-            </a>
-            <a href="#" class="nav-btn">
+    <div class="notification-bar">FREE SHIPPING ON YOUR FIRST ORDER AND ANY ORDER OVER $89
+        <a href="#">Click To See Details</a>
+    </div>
+    <nav class="nav-container drop-down">
+        <a href="#" class="nav-login">
+            Log In
+        </a>
+        <div class="nav-btn-three-container">
+            <a href="#" class="nav-btn drop-btn">
                 Shop
             </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <div class="drop-menu">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 offset-md-1">
                         <p>Drinks</p>
                         <a class="dropdown-item" href="#">All</a>
                         <a class="dropdown-item" href="#">Juices</a>
@@ -64,7 +64,7 @@
                         <a class="dropdown-item" href="#">Hard Cleanse</a>
                     </div>
                     <div class="col-md-3">
-                        <img src="images/submenu-bg.png" alt="">
+                        <img src="images/submenu-bg.png" alt="" class="drop-menu__img">
                     </div>
                 </div>
             </div>
@@ -74,168 +74,197 @@
             <a href="#" class="nav-btn">
                 Build A Box
             </a>
-            <a href="/">
-                <img src="images/JSH_logo.png" alt="">
-            </a>
+        </div>
+        <a href="/" class="nav-logo-container">
+            <img src="images/JSH_logo.png" alt="">
+        </a>
+        <div class="nav-btn-two-container">
             <a href="#" class="nav-btn">
                 The Unconventional
             </a>
             <a href="#" class="nav-btn">
                 Who We Are
             </a>
-            <a href="#" class="nav-cart">
-                <i class="fas fa-archive"></i>
-            </a>
-        </nav>
-        <header class="">
-            <h1>We Ship Overnight Nationwide</h1>
-            <p>We deliver Tuesday-Friday and offer the ability to schedule ahead.</p>
+        </div>
+        <a href="#" class="nav-cart">
+            <i class="fas fa-archive"></i>
+        </a>
+    </nav>
+    <header class="main-hero">
+        <div class="main-hero__content">
+            <h1>We Ship Overnight
+                <br>Nationwide</h1>
+            <p class="main-hero__desc">We deliver Tuesday-Friday and offer the ability
+                <br>to schedule ahead.</p>
             <a href="#" class="btn">View Menu</a>
-        </header>
-        <section>
-            <h2>You buy it by the box</h2>
-            <p>Choose 7-8 products of your liking and have it delivered to you</p>
-            <div class="col-container">
-                <div class="col">
+        </div>
+    </header>
+    <section class="content-container">
+        <h2>You buy it by the box</h2>
+        <p>Choose 7-8 products of your liking and have it delivered to your door
+            <br>as often as you want. Your pick, every time.</p>
+        <div class="column-container">
+            <div class="column column--one">
+                <div class="column__content">
                     <span class="title">Build Your Box</span>
+                    <span class="column__divider"></span>
                 </div>
-                <div class="col">
+            </div>
+            <div class="column column--two">
+                <div class="column__content">
                     <span class="title">Subscribe Or Don't</span>
+                    <span class="column__divider"></span>
                 </div>
-                <div class="col">
+            </div>
+            <div class="column column--three">
+                <div class="column__content margin-top-2">
                     <span class="title">Pick a Delivery Day</span>
+                    <span class="column__divider"></span>
                     <span>we ship
                         <br>overnight</span>
                 </div>
             </div>
-            <div class="btn">shop the menu</div>
-        </section>
-        <section class="juice-slider-container">
-            <div class="juice-image juice-image--one">
-                <h2>Drinks</h2>
-                <hr>
-                <p>Juices</p>
-                <p>Our juices are individually crafted to flush, detoxify, hydrate and strengthen the body.</p>
-                <a href="#" class="btn">View Juice Menu</a>
-            </div>
-            <div class="juice-image juice-image--two">
-                <h2>Slider 2</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusantium quos at, porro magnam
-                    expedita.
-                </p>
-            </div>
-            <div class="juice-image juice-image--three">
-                <h2>Slider 3</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusantium quos at, porro magnam
-                    expedita.
-                </p>
-            </div>
-        </section>
-        <section>
+        </div>
+        <a href="#" class="btn margin-top-2">shop the menu</a>
+    </section>
+    <section class="juice-slider-container content-container">
+        <div class="juice-image juice-image--one">
+            <h2 class="content__mainTitle">Drinks</h2>
             <hr>
-            <h2>Pick Your Pleasure</h2>
-            <p>Our products are nourishing, satiating and never cut with cheap</p>
-            <div class="col-container">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-            <a href="#" class="btn">View Drinks Menu</a>
-        </section>
-        <section>
-            <h2>Cleanse</h2>
+            <p>Juices</p>
+            <p>Our juices are individually crafted to flush, detoxify, hydrate and strengthen the body.</p>
+            <a href="#" class="btn">View Juice Menu</a>
+        </div>
+        <div class="juice-image juice-image--two">
+            <h2>Slider 2</h2>
             <hr>
-            <p>Drink Yourself Clean</p>
-            <p>You like those cupcakes right? Sweet-spot for the whiskey neat? We get it. Time to cleanse.</p>
-            <a href="#" class="btn">Shop Cleanses</a>
-        </section>
-        <section>
-            <div class="col-container">
-                <div class="col">
-                    <div class="col__img"></div>
-                    <div class="col__content">
-                        <p>Platform</p>
-                        <p>Monday-Sunday - 7am - 8pm</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="col__img"></div>
-                    <div class="col__content">
-                        <p>DTLA</p>
-                        <p>Monday-Sunday - 7am - 8pm</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="col__img"></div>
-                    <div class="col__content">
-                        <p>Pasadena</p>
-                        <p>Monday-Saturday - 7:30am - 7pm</p>
-                        <p>Sunday - 8am - 6pm</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="col__img"></div>
-                    <div class="col__content">
-                        <p>Venice</p>
-                        <p>Monday-Sunday - 7am - 8pm</p>
-                    </div>
-                </div>
-                <a href="#" class="btn">View All Locations</a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusantium quos at, porro magnam expedita.
+            </p>
+        </div>
+        <div class="juice-image juice-image--three">
+            <h2>Slider 3</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusantium quos at, porro magnam expedita.
+            </p>
+        </div>
+    </section>
+    <section class="content-container">
+        <span class="content__divider"></span>
+        <h2>Pick Your Pleasure</h2>
+        <p>Our products are nourishing, satiating and never cut
+            <br>with cheap fillers.</p>
+        <div class="column-container margin-top-3">
+            <div class="columnFour column--coldPress">
+                <a href="#" class="column__overlay"></a>
             </div>
-        </section>
-        <footer>
-            <div class="footer-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Let's Be Friends With Benefits</p>
-                        <form action="">
-                            <input type="text">
-                            <button class="btn">OK!</button>
-                        </form>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Company</p>
-                        <a href="#">Find Stores</a>
-                        <a href="#">Our Story</a>
-                        <a href="#">Our Juice</a>
-                        <a href="#">Our Farmers</a>
-                        <a href="#">Our Commitment</a>
-                        <a href="#">Careers</a>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Help</p>
-                        <a href="#">FAQ</a>
-                        <a href="#">Shipping</a>
-                        <a href="#">Return Policy</a>
-                        <a href="#">Gift Cards</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Legal</a>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Social</p>
-                        <a href="#">Instagram</a>
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                    </div>
+            <div class="columnFour column--milk">
+                <a href="#" class="column__overlay"></a>
+            </div>
+            <div class="columnFour column--juiceWhite">
+                <a href="#" class="column__overlay"></a>
+            </div>
+            <div class="columnFour column--juiceRed">
+                <a href="#" class="column__overlay"></a>
+            </div>
+        </div>
+        <a href="#" class="btn margin-top-3">View Drinks Menu</a>
+    </section>
+    <section class="content-container background--cleanse">
+        <h2 class="content__mainTitle">Cleanse</h2>
+        <span class="content__divider"></span>
+        <h2>Drink Yourself Clean</h2>
+        <p>You like those cupcakes right? Sweet-spot for the whiskey
+            <br>neat? We get it. Time to cleanse.</p>
+        <a href="#" class="btn">Shop Cleanses</a>
+    </section>
+    <section class="content-container">
+        <h2 class="content__mainTitle">Locations</h2>
+        <div class="column-container">
+            <div class="columnLocation">
+                <div class="columnLocation__img column--platform">
+                    <a href="#" class="column__overlay">View Store Details</a>
+                </div>
+                <div class="columnLocation__content">
+                    <p>Platform</p>
+                    <p>Monday-Sunday - 7am - 8pm</p>
                 </div>
             </div>
-            <div class="footer-infoBar">
-                <p>© 2016. Juice Served Here. NEVER CONVENTIONAL. All Rights Reserved.</p>
-                <a href="#">Provacy Policy</a>
-                <a href="#">Terms &amp; Conditions</a>
+            <div class="columnLocation">
+                <div class="columnLocation__img column--dtla">
+                    <a href="#" class="column__overlay">View Store Details</a>
+                </div>
+                <div class="columnLocation__content">
+                    <p>DTLA</p>
+                    <p>Monday-Sunday - 7am - 8pm</p>
+                </div>
             </div>
-        </footer>
-    </div>
+            <div class="columnLocation">
+                <div class="columnLocation__img column--pasadena">
+                    <a href="#" class="column__overlay">View Store Details</a>
+                </div>
+                <div class="columnLocation__content">
+                    <p>Pasadena</p>
+                    <p>Monday-Saturday - 7:30am - 7pm</p>
+                    <p>Sunday - 8am - 6pm</p>
+                </div>
+            </div>
+            <div class="columnLocation">
+                <div class="columnLocation__img column--venice">
+                    <a href="#" class="column__overlay">View Store Details</a>
+                </div>
+                <div class="columnLocation__content">
+                    <p>Venice</p>
+                    <p>Monday-Sunday - 7am - 8pm</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn margin-top-3">View All Locations</a>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer__row">
+                <div class="col-md-6">
+                    <p>Let's Be Friends With Benefits</p>
+                    <form action="">
+                        <input type="text" placeholder="Email Address">
+                        <button class="btn">OK!</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <p>Company</p>
+                    <a href="#">Find Stores</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Our Juice</a>
+                    <a href="#">Our Farmers</a>
+                    <a href="#">Our Commitment</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="col-md-2">
+                    <p>Help</p>
+                    <a href="#">FAQ</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Legal</a>
+                </div>
+                <div class="col-md-2">
+                    <p>Social</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-infoBar">
+            <p>© 2016. Juice Served Here. NEVER CONVENTIONAL. All Rights Reserved.</p>
+            <a href="#">Provacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
     <script src="js/slick.js"></script>
     <!--build:js js/main.min.js -->

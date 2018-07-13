@@ -47,7 +47,7 @@ gulp.task("scripts", function() {
 gulp.task("watch:files", function() {
   gulp.watch("app/scss/**/*.scss", ["sass"]);
   gulp.watch("app/js/**/*.js", ["scripts"]);
-  gulp.watch(["app/*.html", "app/scss/**/*.scss"], ["useref"]);
+  gulp.watch(["app/*.html"], ["useref"]);
   //   gulp.watch("app/*.html", ["clean"]);
 });
 
